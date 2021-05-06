@@ -43,21 +43,27 @@ header{
     }
 }
 
-.hero{
-    background-color: #161515;
-    box-shadow: 8px 8px 12px #aaa;
-    height: 720px;
+section {
+    &.hero{
+        background-color: #161515;
+        box-shadow: 8px 8px 12px #aaa;
+        height: 720px;
+        .background{
+        width: 100%;
+        }
+        .profile{
+            width: 40%;
+            border-radius: 9999px;
+            position: relative;
+            left: 30%; 
+            top: -15%;
+        }
+    }
+
+    
+
 }
 
-#img-hero{
-    width: 100%;
-}
-#img-profile{
-    width: 40%;
-    border-radius: 9999px;
-    position: relative;
-    left: 30%; top: -15%;
-}
 
 
 /*              HEADER // HERRO             */
