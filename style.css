@@ -1,6 +1,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  font-family: 'Varela Round', sans-serif;
 }
 
 h1, h2 {
@@ -40,6 +41,7 @@ header ul {
 }
 
 header ul li {
+  margin-top: 35px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -52,11 +54,17 @@ header ul li {
           align-items: center;
 }
 
+header ul li svg {
+  height: 40px;
+  width: 40px;
+}
+
+section {
+  min-height: 720px;
+}
+
 section.hero {
   background-color: #161515;
-  -webkit-box-shadow: 8px 8px 12px #aaa;
-          box-shadow: 8px 8px 12px #aaa;
-  height: 720px;
 }
 
 section.hero .background {
@@ -68,7 +76,22 @@ section.hero .profile {
   border-radius: 9999px;
   position: relative;
   left: 30%;
-  top: -15%;
+  bottom: 80px;
+}
+
+section.presentation {
+  margin: 0;
+  background-color: #445254;
+  color: white;
+}
+
+section.presentation h2 {
+  margin-top: 0;
+}
+
+section.presentation p {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /*              HEADER // HERRO             */
