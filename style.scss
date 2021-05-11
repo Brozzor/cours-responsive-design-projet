@@ -1,3 +1,7 @@
+$primary-color: #2A324B;
+$secondary-color: #767B91;
+$accent-color: #F7C59F;
+
 html, body {
     padding: 0;
     margin: 0;
@@ -19,7 +23,7 @@ h1, h2 {
 header{
     width: 100%;
     height: 10%;
-    background: #161515;
+    background: $primary-color;
     position: fixed;
     bottom: 0;
 
@@ -53,7 +57,7 @@ section {
     min-height: 720px;
     
     &.hero{
-        background-color: #161515;
+        background-color: $primary-color;
         
         .background{
             width: 100%;
@@ -65,11 +69,14 @@ section {
             left: 30%; 
             bottom: 80px;
         }
+        .btn-contact {
+            color: $accent-color;
+        }
     }
 
     &.presentation{
         margin: 0;
-        background-color: #445254;
+        background-color: $primary-color;
         color: white;
         h2 {
             margin-top: 0;
@@ -79,9 +86,10 @@ section {
             margin-right: 5%;
         }
     }
-    
-    
 
+    .title {
+        color: $accent-color;
+    }
 }
 
 
