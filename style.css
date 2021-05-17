@@ -46,7 +46,7 @@ header ul li {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  color: white;
+  color: #F7C59F;
   width: 100%;
   height: 100%;
   -webkit-box-align: center;
@@ -84,13 +84,8 @@ section.hero .btn-contact {
 }
 
 section.presentation {
-  margin: 0;
-  background-color: #2A324B;
-  color: white;
-}
-
-section.presentation h2 {
-  margin-top: 0;
+  background-color: white;
+  color: #3581B8;
 }
 
 section.presentation p {
@@ -98,8 +93,18 @@ section.presentation p {
   margin-right: 5%;
 }
 
+section.skills {
+  background-color: #2A324B;
+}
+
+section.skills .title {
+  color: white;
+}
+
 section .title {
-  color: #F7C59F;
+  color: #3581B8;
+  padding-top: 20px;
+  margin-top: 0;
 }
 
 /*              HEADER // HERRO             */

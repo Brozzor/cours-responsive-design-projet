@@ -1,5 +1,5 @@
 $primary-color: #2A324B;
-$secondary-color: #767B91;
+$secondary-color: #3581B8;
 $accent-color: #F7C59F;
 
 html, body {
@@ -41,7 +41,7 @@ header{
             margin-top: 35px;
             justify-content: center;
             text-align:center;
-            color: white;
+            color: $accent-color;
             width: 100%;
             height: 100%;
             align-items: center;
@@ -75,20 +75,26 @@ section {
     }
 
     &.presentation{
-        margin: 0;
-        background-color: $primary-color;
-        color: white;
-        h2 {
-            margin-top: 0;
-        }
+        background-color: white;
+        color: $secondary-color;
         p {
             margin-left: 5%;
             margin-right: 5%;
         }
     }
 
+    &.skills{
+        background-color: $primary-color;
+
+        .title {
+            color: white;
+        }
+    }
+
     .title {
-        color: $accent-color;
+        color: $secondary-color;
+        padding-top: 20px;
+        margin-top: 0;
     }
 }
 
