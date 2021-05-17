@@ -20,6 +20,7 @@ header {
   background: #2A324B;
   position: fixed;
   bottom: 0;
+  max-height: 80px;
 }
 
 header ul {
@@ -79,7 +80,11 @@ section.hero .profile {
   bottom: 80px;
 }
 
-section.hero .btn-contact {
+section.hero .contact {
+  padding-bottom: 10px;
+}
+
+section.hero .contact .btn-contact {
   color: #F7C59F;
 }
 
