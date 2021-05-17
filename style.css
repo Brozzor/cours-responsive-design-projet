@@ -139,6 +139,44 @@ section.skills .body li {
   padding-left: 10px;
 }
 
+section.experiences .title {
+  margin-bottom: 25px;
+}
+
+section.experiences .card {
+  padding: 5px;
+  margin: 15px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 200px;
+}
+
+section.experiences .card .card-title {
+  position: absolute;
+  margin-top: -15px;
+  padding: 5px;
+  color: white;
+  background-color: #3581B8;
+  max-width: 15rem;
+  font-size: small;
+}
+
+section.experiences .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.experiences .card .card-body .card-img {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-image: url("img/dev.jpg");
+}
+
 section .title {
   color: #3581B8;
   padding-top: 20px;
