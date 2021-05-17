@@ -21,6 +21,8 @@ header {
   position: fixed;
   bottom: 0;
   max-height: 80px;
+  outline: 1px solid #F7C59F;
+  z-index: 50;
 }
 
 header ul {
@@ -90,7 +92,7 @@ section.hero .contact .btn-contact {
 
 section.presentation {
   background-color: white;
-  color: #3581B8;
+  color: black;
 }
 
 section.presentation p {
@@ -100,10 +102,41 @@ section.presentation p {
 
 section.skills {
   background-color: #2A324B;
+  min-height: 320px;
 }
 
 section.skills .title {
+  position: absolute;
+  margin-top: -25px;
+  padding: 10px;
+  padding-left: 25px;
   color: white;
+  background-color: #3581B8;
+  max-width: 10rem;
+}
+
+section.skills .body {
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+section.skills .body h3 {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+section.skills .body hr {
+  margin-top: -1px;
+  position: absolute;
+  right: 0;
+  width: 85%;
+  border: 0.5px solid #3F4969;
+  border-radius: 5px;
+}
+
+section.skills .body li {
+  padding-left: 10px;
 }
 
 section .title {

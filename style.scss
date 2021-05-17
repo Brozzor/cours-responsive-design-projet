@@ -27,6 +27,8 @@ header{
     position: fixed;
     bottom: 0;
     max-height: 80px;
+    outline: 1px solid #F7C59F;
+    z-index: 50;
     ul {
         list-style: none;
         display: flex;
@@ -80,7 +82,7 @@ section {
 
     &.presentation{
         background-color: white;
-        color: $secondary-color;
+        color: black;
         p {
             margin-left: 5%;
             margin-right: 5%;
@@ -89,10 +91,38 @@ section {
 
     &.skills{
         background-color: $primary-color;
-
+        min-height: 320px;
         .title {
+            position: absolute;
+            margin-top: -25px;
+            padding: 10px;
+            padding-left: 25px;
             color: white;
+            background-color: #3581B8;
+            max-width: 10rem;
         }
+        .body {
+            color: white;
+            padding-left: 10px;
+            padding-top: 10px;
+            h3 {
+                padding-top: 15px;
+                padding-left: 10px;
+            }
+            hr {
+                margin-top: -1px;
+                position: absolute;
+                right: 0;
+                width: 85%;
+                border: 0.5px solid #3F4969;
+                border-radius: 5px;
+            }
+            li {
+                padding-left: 10px;
+            }
+        }
+        
+        
     }
 
     .title {
