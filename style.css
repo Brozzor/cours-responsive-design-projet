@@ -206,6 +206,9 @@ section.experiences .card {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   height: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section.experiences .card .card-title {
@@ -220,9 +223,10 @@ section.experiences .card .card-title {
 
 section.experiences .card .card-img {
   padding: 0;
-  width: 100%;
-  height: auto;
-  background-image: url("img/dev.jpg");
+  margin: 0;
+  width: 150px;
+  height: 200px;
+  border-radius: 3px;
 }
 
 section .title {
