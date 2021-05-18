@@ -44,6 +44,10 @@ header{
     max-height: 80px;
     outline: 1px solid #F7C59F;
     z-index: 50;
+    @media (min-width: $breakpoint-screen-pc) {
+        top: 0;
+        bottom: 1;
+    }
     ul {
         list-style: none;
         display: flex;
@@ -66,12 +70,23 @@ header{
                 height: 40px;
                 width: 40px;
             }
+            p {
+                display: none;
+            }
+
+            @media (min-width: $breakpoint-screen-pc) {
+                svg {
+                    display: none;
+                }
+                p {
+                    display: inherit;
+                }
+            }
         }
     }
 }
 
 section {
-    
     
     &.hero{
         background-color: $primary-color;

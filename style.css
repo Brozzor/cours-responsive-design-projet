@@ -37,6 +37,13 @@ header {
   z-index: 50;
 }
 
+@media (min-width: 1440px) {
+  header {
+    top: 0;
+    bottom: 1;
+  }
+}
+
 header ul {
   list-style: none;
   display: -webkit-box;
@@ -72,6 +79,19 @@ header ul li {
 header ul li svg {
   height: 40px;
   width: 40px;
+}
+
+header ul li p {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  header ul li svg {
+    display: none;
+  }
+  header ul li p {
+    display: inherit;
+  }
 }
 
 section.hero {
