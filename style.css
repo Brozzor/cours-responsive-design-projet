@@ -189,6 +189,8 @@ section.skills .body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -196,7 +198,7 @@ section.skills .body hr {
   margin-top: -1px;
   position: absolute;
   right: 0;
-  width: 85%;
+  width: 100%;
   border: 0.5px solid #3F4969;
   border-radius: 5px;
 }
@@ -205,6 +207,17 @@ section.skills .body hr {
   section.skills .body hr {
     margin-left: 0px;
     margin-right: 0px;
+    right: auto;
+    width: 1px;
+    border-left: outset;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.skills .body .skill {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -215,6 +228,16 @@ section.skills .body .skill h3 {
 
 section.skills .body .skill li {
   padding-left: 10px;
+}
+
+@media (min-width: 1024px) {
+  section.skills .body .skill li {
+    padding-left: auto;
+  }
+  section.skills .body .skill h3 {
+    padding-top: auto;
+    padding-left: auto;
+  }
 }
 
 section.experiences .title {
