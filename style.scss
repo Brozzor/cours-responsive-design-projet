@@ -123,11 +123,18 @@ section {
     &.presentation{
         background-color: white;
         color: black;
-        height: 600px;
-        p {
-            margin-left: 5%;
-            margin-right: 5%;
+        min-height: 300px;
+        margin-bottom: 45px;
+        
+        .text {
+            display: flex;
+            justify-content: center;
+            p {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
         }
+        
 
         @media (min-width: $breakpoint-screen-ipad) {
             height: 400px;
