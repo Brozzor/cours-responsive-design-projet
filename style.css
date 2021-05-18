@@ -21,11 +21,6 @@ h1, h2 {
   width: 50%;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 /*              HEADER // HERRO             */
 header {
   width: 100%;
@@ -86,12 +81,26 @@ header ul li p {
   display: none;
 }
 
+header ul li a {
+  text-decoration: none;
+  color: #F7C59F;
+}
+
 @media (min-width: 1440px) {
+  header ul li {
+    margin-top: 55px;
+  }
   header ul li svg {
     display: none;
   }
   header ul li p {
     display: inherit;
+  }
+  header ul li a {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: #F7C59F;
   }
 }
 
@@ -161,6 +170,7 @@ section.presentation .text {
 section.presentation .text p {
   margin-left: 5%;
   margin-right: 5%;
+  max-width: 900px;
 }
 
 @media (min-width: 1024px) {
