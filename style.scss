@@ -169,6 +169,7 @@ section {
             margin-bottom: 25px;
         }
         .card {
+            display: flex;
             padding: 5px;
             margin: 15px;
             margin-bottom: 25px;
@@ -185,19 +186,20 @@ section {
                 font-size: small;
             }
             .card-body {
-                display: flex;
+                
                 .card-date {
 
                 }
                 .card-text {
 
                 }
-                .card-img {
-                    padding: 0;
-                    width: 100%;
-                    height: auto;
-                    background-image: url("img/dev.jpg");
-                }
+                
+            }
+            .card-img {
+                padding: 0;
+                width: 100%;
+                height: auto;
+                background-image: url("img/dev.jpg");
             }
         }
         
@@ -211,8 +213,16 @@ section {
 }
 
 
-/*              HEADER // HERRO             */
+/*            FOOTER            */
 
-footer{
-
+footer {
+    background-color: $accent-color;
+    height: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    p {
+        align-items: center;
+        color: #505455;
+    }
 }

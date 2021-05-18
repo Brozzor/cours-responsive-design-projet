@@ -195,6 +195,9 @@ section.experiences .title {
 }
 
 section.experiences .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 5px;
   margin: 15px;
   margin-bottom: 25px;
@@ -215,13 +218,7 @@ section.experiences .card .card-title {
   font-size: small;
 }
 
-section.experiences .card .card-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-section.experiences .card .card-body .card-img {
+section.experiences .card .card-img {
   padding: 0;
   width: 100%;
   height: auto;
@@ -234,5 +231,23 @@ section .title {
   margin-top: 0;
 }
 
-/*              HEADER // HERRO             */
+/*            FOOTER            */
+footer {
+  background-color: #F7C59F;
+  height: 50px;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #505455;
+}
 /*# sourceMappingURL=style.css.map */
