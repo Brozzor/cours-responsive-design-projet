@@ -17,10 +17,6 @@ html, body {
     @media (min-width: $breakpoint-screen-pc) {
         font-size: large;
     }
-    /*
-    @media (min-width: $breakpoint-screen-pc4k) {
-        font-size: x-large;
-    }*/
 }
 
 h1, h2 {
@@ -31,7 +27,6 @@ h1, h2 {
 #name{
     width: 50%;
 }
-
 
 /*              HEADER // HERRO             */
 
@@ -94,10 +89,13 @@ section {
         min-height: 550px;           
         max-height: 2400px;           
 
-        .backgroundpc{
+        .background {
             width: 100%;
             @media (max-width: $breakpoint-screen-phone) {
                 display: none;
+            }
+            @media (min-width: $breakpoint-screen-pc) {
+                height: 500px;
             }
         }
 
@@ -237,8 +235,12 @@ footer {
     margin-bottom: 80px;
     display: flex;
     justify-content: center;
+    @media (min-width: $breakpoint-screen-pc) {
+        margin-bottom: 0px;
+    }
     p {
         align-items: center;
         color: #505455;
     }
 }
+

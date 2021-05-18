@@ -4,10 +4,6 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Varela Round', sans-serif;
-  /*
-    @media (min-width: $breakpoint-screen-pc4k) {
-        font-size: x-large;
-    }*/
 }
 
 @media (min-width: 1440px) {
@@ -100,13 +96,19 @@ section.hero {
   max-height: 2400px;
 }
 
-section.hero .backgroundpc {
+section.hero .background {
   width: 100%;
 }
 
 @media (max-width: 320px) {
-  section.hero .backgroundpc {
+  section.hero .background {
     display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  section.hero .background {
+    height: 500px;
   }
 }
 
@@ -269,6 +271,12 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 1440px) {
+  footer {
+    margin-bottom: 0px;
+  }
 }
 
 footer p {
