@@ -161,28 +161,47 @@ section {
             @media (min-width: $breakpoint-screen-ipad) {
                 display: flex;
                 justify-content: center;
+                margin-top: auto;
+                margin-bottom: auto;
             }
             hr {
                 margin-top: -1px;
                 position: absolute;
                 right: 0;
-                width: 85%;
+                width: 100%;
                 border: 0.5px solid #3F4969;
                 border-radius: 5px;
                 @media (min-width: $breakpoint-screen-ipad) {
                     margin-left: 0px;
                     margin-right: 0px;
+                    right: auto;
+                    width: 1px;
+                    border-left: outset;
+                    height: 300px;
                 }
             }
             .skill {
+                @media (min-width: $breakpoint-screen-ipad) {
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+
                 h3 {
                     padding-top: 15px;
                     padding-left: 10px;
                 }
                 
-                
                 li {
                     padding-left: 10px;
+                }
+                @media (min-width: $breakpoint-screen-ipad) {
+                    li {
+                        padding-left: auto;
+                    }
+                    h3 {
+                        padding-top: auto;
+                        padding-left: auto;
+                    }
                 }
             }
             
