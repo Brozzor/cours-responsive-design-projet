@@ -153,9 +153,9 @@ section {
             color: white;
             padding-left: 10px;
             padding-top: 10px;
-            h3 {
-                padding-top: 15px;
-                padding-left: 10px;
+            @media (min-width: $breakpoint-screen-ipad) {
+                display: flex;
+                justify-content: center;
             }
             hr {
                 margin-top: -1px;
@@ -164,10 +164,23 @@ section {
                 width: 85%;
                 border: 0.5px solid #3F4969;
                 border-radius: 5px;
+                @media (min-width: $breakpoint-screen-ipad) {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
             }
-            li {
-                padding-left: 10px;
+            .skill {
+                h3 {
+                    padding-top: 15px;
+                    padding-left: 10px;
+                }
+                
+                
+                li {
+                    padding-left: 10px;
+                }
             }
+            
         }
         
         
@@ -178,6 +191,10 @@ section {
             margin-bottom: 25px;
         }
         .body {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1200px;
+            flex-wrap: wrap;
             @media (min-width: $breakpoint-screen-ipad) {
                 display: flex;
                 justify-content: center;
@@ -191,6 +208,13 @@ section {
                 transition: 0.3s;
                 height: 200px;
                 justify-content: space-between;
+
+                @media (min-width: $breakpoint-screen-ipad) {
+                    width: 400px;
+                }
+                @media (min-width: $breakpoint-screen-pc) {
+                    width: 500px;
+                }
                 .card-title {
                     position: absolute;
                     margin-top: -15px;
@@ -215,8 +239,6 @@ section {
                 }
             }
         }
-        
-        
     }
 
     .title {
