@@ -1,6 +1,13 @@
+/* COLORS */
 $primary-color: #2A324B;
 $secondary-color: #3581B8;
 $accent-color: #F7C59F;
+
+/* BREAKPOINTS */
+$breakpoint-screen-phone: 576px;
+$breakpoint-screen-ipad: 1024px;
+$breakpoint-screen-pc: 1440px;
+$breakpoint-screen-pc4k: 2560px;
 
 html, body {
     padding: 0;
@@ -68,20 +75,21 @@ section {
             width: 40%;
             border-radius: 9999px;
             position: relative;
-            left: 30%; 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             bottom: 80px;
+            @media (min-width: $breakpoint-screen-ipad) {
+                bottom: 120px;
+                width: 20%;
+            }
         }
         .contact {
             padding-bottom: 10px;
             .btn-contact {
                 color: $accent-color;
             }
-        }
-
-        @include min-media("screen-ipad") {
-            bottom: 180px;
-        }
-        
+        }   
     }
 
     &.presentation{
