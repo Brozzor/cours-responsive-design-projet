@@ -4,17 +4,15 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Varela Round', sans-serif;
+  /*
+    @media (min-width: $breakpoint-screen-pc4k) {
+        font-size: x-large;
+    }*/
 }
 
 @media (min-width: 1440px) {
   html, body {
     font-size: large;
-  }
-}
-
-@media (min-width: 2460px) {
-  html, body {
-    font-size: x-large;
   }
 }
 
@@ -78,13 +76,8 @@ header ul li svg {
 
 section.hero {
   background-color: #2A324B;
-  height: 700px;
-}
-
-@media (max-width: 1440px) {
-  section.hero {
-    height: 1000px;
-  }
+  min-height: 550px;
+  max-height: 2400px;
 }
 
 section.hero .backgroundpc {
@@ -94,12 +87,6 @@ section.hero .backgroundpc {
 @media (max-width: 320px) {
   section.hero .backgroundpc {
     display: none;
-  }
-}
-
-@media (max-width: 1440px) {
-  section.hero .backgroundpc {
-    height: 300px;
   }
 }
 
@@ -194,15 +181,26 @@ section.experiences .title {
   margin-bottom: 25px;
 }
 
-section.experiences .card {
+@media (min-width: 1024px) {
+  section.experiences .body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+section.experiences .body .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
   margin: 15px;
   margin-bottom: 25px;
-  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   height: 200px;
@@ -211,7 +209,7 @@ section.experiences .card {
           justify-content: space-between;
 }
 
-section.experiences .card .card-title {
+section.experiences .body .card .card-title {
   position: absolute;
   margin-top: -15px;
   padding: 5px;
@@ -221,7 +219,12 @@ section.experiences .card .card-title {
   font-size: small;
 }
 
-section.experiences .card .card-img {
+section.experiences .body .card .card-body .card-date {
+  margin-top: 20px;
+  font-size: small;
+}
+
+section.experiences .body .card .card-img {
   padding: 0;
   margin: 0;
   width: 150px;

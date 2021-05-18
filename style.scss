@@ -17,9 +17,10 @@ html, body {
     @media (min-width: $breakpoint-screen-pc) {
         font-size: large;
     }
+    /*
     @media (min-width: $breakpoint-screen-pc4k) {
         font-size: x-large;
-    }
+    }*/
 }
 
 h1, h2 {
@@ -75,18 +76,13 @@ section {
     &.hero{
         background-color: $primary-color;
         
-        height: 700px;            
-        @media (max-width: $breakpoint-screen-pc) {
-            height: 1000px;
-        }
+        min-height: 550px;           
+        max-height: 2400px;           
 
         .backgroundpc{
             width: 100%;
             @media (max-width: $breakpoint-screen-phone) {
                 display: none;
-            }
-            @media (max-width: $breakpoint-screen-pc) {
-                height: 300px;
             }
         }
 
@@ -168,42 +164,45 @@ section {
         .title {
             margin-bottom: 25px;
         }
-        .card {
-            display: flex;
-            padding: 5px;
-            margin: 15px;
-            margin-bottom: 25px;
-            box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            height: 200px;
-            justify-content: space-between;
-            .card-title {
-                position: absolute;
-                margin-top: -15px;
+        .body {
+            @media (min-width: $breakpoint-screen-ipad) {
+                display: flex;
+                justify-content: center;
+            }
+                .card {
+                display: flex;
                 padding: 5px;
-                color: white;
-                background-color: #3581B8;
-                max-width: 15rem;
-                font-size: small;
-            }
-            .card-body {
-                
-                .card-date {
-
-                }
-                .card-text {
-
-                }
-                
-            }
-            .card-img {
-                padding: 0;
-                margin: 0;
-                width: 150px;
+                margin: 15px;
+                margin-bottom: 25px;
+                box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+                transition: 0.3s;
                 height: 200px;
-                border-radius: 3px;
+                justify-content: space-between;
+                .card-title {
+                    position: absolute;
+                    margin-top: -15px;
+                    padding: 5px;
+                    color: white;
+                    background-color: #3581B8;
+                    max-width: 15rem;
+                    font-size: small;
+                }
+                .card-body {
+                    .card-date {
+                        margin-top: 20px;
+                        font-size: small;
+                    }      
+                }
+                .card-img {
+                    padding: 0;
+                    margin: 0;
+                    width: 150px;
+                    height: 200px;
+                    border-radius: 3px;
+                }
             }
         }
+        
         
     }
 
