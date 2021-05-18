@@ -77,6 +77,10 @@ section {
                 color: $accent-color;
             }
         }
+
+        @include min-media("screen-ipad") {
+            bottom: 180px;
+        }
         
     }
 
