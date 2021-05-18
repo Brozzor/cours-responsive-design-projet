@@ -4,15 +4,22 @@ $secondary-color: #3581B8;
 $accent-color: #F7C59F;
 
 /* BREAKPOINTS */
-$breakpoint-screen-phone: 576px;
+$breakpoint-screen-phone: 320px;
 $breakpoint-screen-ipad: 1024px;
 $breakpoint-screen-pc: 1440px;
-$breakpoint-screen-pc4k: 2560px;
+$breakpoint-screen-pc4k: 2460px;
 
 html, body {
     padding: 0;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
+
+    @media (min-width: $breakpoint-screen-pc) {
+        font-size: large;
+    }
+    @media (min-width: $breakpoint-screen-pc4k) {
+        font-size: x-large;
+    }
 }
 
 h1, h2 {
@@ -63,14 +70,26 @@ header{
 }
 
 section {
-    min-height: 720px;
+    
     
     &.hero{
         background-color: $primary-color;
         
-        .background{
-            width: 100%;
+        height: 700px;            
+        @media (max-width: $breakpoint-screen-pc) {
+            height: 1000px;
         }
+
+        .backgroundpc{
+            width: 100%;
+            @media (max-width: $breakpoint-screen-phone) {
+                display: none;
+            }
+            @media (max-width: $breakpoint-screen-pc) {
+                height: 300px;
+            }
+        }
+
         .profile{
             width: 40%;
             border-radius: 9999px;
@@ -95,9 +114,17 @@ section {
     &.presentation{
         background-color: white;
         color: black;
+        height: 600px;
         p {
             margin-left: 5%;
             margin-right: 5%;
+        }
+
+        @media (min-width: $breakpoint-screen-ipad) {
+            height: 400px;
+        }
+        @media (min-width: $breakpoint-screen-pc) {
+            height: 350px;
         }
     }
 

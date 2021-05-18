@@ -6,6 +6,18 @@ html, body {
   font-family: 'Varela Round', sans-serif;
 }
 
+@media (min-width: 1440px) {
+  html, body {
+    font-size: large;
+  }
+}
+
+@media (min-width: 2460px) {
+  html, body {
+    font-size: x-large;
+  }
+}
+
 h1, h2 {
   color: white;
   text-align: center;
@@ -64,16 +76,31 @@ header ul li svg {
   width: 40px;
 }
 
-section {
-  min-height: 720px;
-}
-
 section.hero {
   background-color: #2A324B;
+  height: 700px;
 }
 
-section.hero .background {
+@media (max-width: 1440px) {
+  section.hero {
+    height: 1000px;
+  }
+}
+
+section.hero .backgroundpc {
   width: 100%;
+}
+
+@media (max-width: 320px) {
+  section.hero .backgroundpc {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  section.hero .backgroundpc {
+    height: 300px;
+  }
 }
 
 section.hero .profile {
@@ -104,11 +131,24 @@ section.hero .contact .btn-contact {
 section.presentation {
   background-color: white;
   color: black;
+  height: 600px;
 }
 
 section.presentation p {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+@media (min-width: 1024px) {
+  section.presentation {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1440px) {
+  section.presentation {
+    height: 350px;
+  }
 }
 
 section.skills {
